@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+
+        .letter-spacing {
+            letter-spacing: 1px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .Form-Login {
+            border: 2px solid black;
+            margin: auto;
+            width: 50%;
+            background: rgb(245, 252, 248);
+            border-radius: 25px;
+            box-shadow: 1px 1px 12px 1px;
+            padding: 32px 0px;
+            align-items: center;
+
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .emailInput,
+        .passwordInput {
+            width: 78%;
+            height: 42px;
+            border-radius: 6px;
+            margin: 17px 45px;
+            padding: 8px;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .button-And-CreateAccount {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 29px;
+            padding: 33px;
+        }
+
+        .padding-left {
+            padding-left: 47px;
+        }
+
+        .PrimaryFont {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .SignUp-Button {
+            padding: 10px 20px;
+            height: 62px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: #435870;
+            border: none;
+            cursor: pointer;
+        }
+
+        .colorWhite {
+            color: white;
+        }
+
+        .fontThrityTwo {
+            font-size: 32px;
+        }
+
+        .colour {
+            color: #53565A;
+        }
+
+        .login-Page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            height: 100vh;
+        }
+
+        .fontFourteen {
+            font-size: 14px;
+        }
+
+        .hover-button {
+            position: relative;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+            height: 62px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: #435870;
+            border: none;
+        }
+
+        /* .hover-button .text {
+            position: absolute;
+            transition: all 0.4s ease;
+        }
+
+        .hover-button .original {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hover-button .hover {
+            top: -100%;
+            transform: translate(-50%, 0%);
+        }
+
+        .hover-button:hover .original {
+            top: 100%;
+            transform: translate(-50%, 0%);
+        }
+
+        .hover-button:hover .hover {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        @media(max-width:720px) {
+            .Form-Login {
+                border: 2px solid black;
+                margin: auto;
+                width: 67%;
+                background: rgb(245, 252, 248);
+                border-radius: 25px;
+                box-shadow: 1px 1px 12px 1px;
+                padding: 32px 0px;
+                align-items: center;
+            }
+
+            .hover-button {
+                padding: 10px 20px;
+                height: 62px;
+                width: 65%;
+                border-radius: 5px;
+                background-color: #435870;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+
+        @media(max-width:500px) {
+
+            .emailInput,
+            .passwordInput {
+                width: 66%;
+                height: 29px;
+                border-radius: 6px;
+                margin: 17px 45px;
+                padding: 8px;
+            }
+
+
+            .Login-Text {
+                font-size: 11px;
+            }
+
+            .Form-Login {
+                border: 2px solid black;
+                margin: auto;
+                width: 90%;
+                background: rgb(245, 252, 248);
+                border-radius: 25px;
+                box-shadow: 1px 1px 12px 1px;
+                padding: 32px 0px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-------------------------------------------------------------- Login Page  ---------------------------------------------------------->
+    <div class="customer-login-template">
+
+        <div class="login-Page">
+
+            <div class="Form-Login">
+                <form>
+
+                    <h1 class="LoginText center colour PrimaryFont fontThrityTwo letterSpacing">LOGIN</h1>
+
+                    <div class="field">
+                        <label class="label-Width">
+                            <input type="email" placeholder="Email" class="emailInput letterSpacing fontSixteen">
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="label-Width">
+                            <input type="password" placeholder="Password"
+                                class="passwordInput letterSpacing fontSixteen">
+                        </label>
+                    </div>
+
+                    <a href="#"
+                        class="Login-Text padding padding-left underline PrimaryFont fontFourteen colour letterSpacing">Forgot
+                        Your
+                        Password
+                        ?</a>
+                    <div class=" button-And-CreateAccount flex">
+
+                        <button class="hover-button">
+                            <span class="text original PrimaryFont letter-spacing fontFourteen">Sign In</span>
+                            <!-- <span class="text hover PrimaryFont letter-spacing fontFourteen">Welcome</span> -->
+                        </button>
+
+
+                        <a href="#" class="Login-Text underline  PrimaryFont fontFourteen colour letterSpacing">Create
+                            Account</a>
+
+                        <a href="#" class="Login-Text underline  PrimaryFont fontFourteen colour letterSpacing">Create
+                            Wholesale Account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/script.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover-button {
+            position: relative;
+            /* overflow: hidden; */
+            height: 40px;
+            width: 120px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hover-button .text {
+            position: absolute;
+            left: 50%;
+            /* transform: translateX(-50%); */
+            transition: all 0.4s ease;
+        }
+
+        /* Original text position */
+        .hover-button .original {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Hover text starts below */
+        .hover-button .hover {
+            top: -100%;
+            transform: translate(-50%, 0%);
+        }
+
+        /* On hover, animate both texts */
+        .hover-button:hover .original {
+            top: 100%;
+            transform: translate(-50%, 0%);
+        }
+
+        .hover-button:hover .hover {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="hover-button">
+        <span class="text original">Sign In</span>
+        <span class="text hover">Welcome</span>
+    </button>
+
+
+</body>
+
+</html>

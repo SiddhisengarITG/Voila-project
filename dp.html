@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: 0px;
+        }
+
+        .colorWhite {
+            color: white;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .colour {
+            color: #53565A;
+        }
+
+        .letterSpacing {
+            letter-spacing: 1px;
+        }
+
+        .fontSixteen {
+            font-size: 16px;
+        }
+
+
+        .center {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .padding {
+            padding: 10px;
+        }
+
+        .cart-drawer-empty-content {
+            border: 2px solid black;
+            margin: auto;
+            width: 30%;
+            padding: 20px;
+
+        }
+
+
+        button.drawer-closer {
+            border: none;
+            background: transparent;
+        }
+
+        .PrimaryFont {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .cartBtn {
+            padding: 10px 18px;
+            height: 51px;
+            width: 69%;
+            display: flex;
+            line-height: 4.2;
+            border: none;
+            justify-content: center;
+            border-radius: 5px;
+            align-items: center;
+            background-color: #435870;
+        }
+
+        .cart-drawer-empty-content {
+            border: 2px solid black;
+            margin: auto;
+            width: 30%;
+            background: rgb(245, 252, 248);
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cart-empty-text-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .popins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        button.drawer-closer {
+            border: none;
+            background: transparent;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!------------------------------------------------Cart Page --------------------------------------->
+
+    <div class="drawer">
+        <div class="drawer-inner-empty">
+            <div class="cart-drawer-empty-content">
+                <div class="cart-empty-text-heading">
+                    <button class="drawer-closer">
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            class="icon icon-close" viewBox="0 0 18 17">
+                            <path fill="currentColor"
+                                d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z">
+                            </path>
+                        </svg>
+                    </button>
+                    <h2 class="PrimaryFont colour letterSpacing">YOUR CART IS EMPTY</h2>
+                    <button class="cartBtn"><a href="#" class="colorWhite popins fontSixteen fontWeightFive">Continue
+                            Shopping</a></button>
+                    <h3 class="cart-Login-Title colour PrimaryFont letterSpacing">HAVE AN ACCOUNT ?</h3>
+                    <p class="colour  letterSpacing fontSixteen popins"><a href="#"
+                            class="underline colour  letterSpacing fontSixteen popins">Log in</a> to check
+                        out faster</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
