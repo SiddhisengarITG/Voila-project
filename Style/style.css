@@ -526,15 +526,16 @@ div#sidePanel {
     cursor: pointer;
 }
 
-/* .responsive-navigation-content.open {
+.responsive-navigation-content.open {
     left: 0;
     color: black;
     display: flex;
     flex-direction: column;
     gap: 20px;
-} */
+}
 
-/* .responsive-navigation-content {
+
+.responsive-navigation-content {
     position: fixed;
     top: 0;
     left: -452px;
@@ -545,10 +546,10 @@ div#sidePanel {
     transition: left 0.3s;
     z-index: 1000;
     top: 140px;
-    /* margin-left: 15px; */
-/* overflow-y: auto;
-height: auto;
-} */
+    margin-left: 15px;
+    overflow-y: auto;
+    height: auto;
+}
 
 svg.icon.icon-caret {
     width: 15px;
@@ -648,8 +649,9 @@ svg.icon.icon-caret {
 
     video {
         width: 100%;
+        max-height: 850px;
         object-fit: cover;
-        aspect-ratio: 3/5;
+        aspect-ratio: 5/5;
     }
 
     .header {
@@ -668,10 +670,12 @@ svg.icon.icon-caret {
         align-items: center;
         justify-content: space-between;
         width: 83%;
-        bottom: 47px;
+        bottom: 18px;
         flex-direction: column;
         left: 63px;
+        gap: 10px;
     }
+
 
     .get-btn {
         border-radius: 76px;
@@ -700,11 +704,14 @@ svg.icon.icon-caret {
         gap: 20px;
     }
 
-    div#responsive-content {
+    #responsive-content {
         padding: 8px 42px;
         margin: 2px 1px 8px 16px;
         width: 80%;
-        width: calc(100% - 20%);
+        left: -11px;
+        height: 99%;
+        margin: 0px 1px 15px 32px;
+        width: calc(100% - 30%);
         margin: 0px 20p 8px;
         position: fixed;
         /* margin-left: 0px; */
@@ -795,6 +802,20 @@ svg.icon.icon-caret {
         border-radius: 5px;
         background-color: #435870;
         border: none;
+    }
+
+    #responsive-content {
+        padding: 8px 42px;
+        margin: 2px 1px 8px 16px;
+        width: 80%;
+        left: 11px;
+        /* height: 44%; */
+        width: calc(100% - 38%);
+        margin: 0px 20p 8px;
+        position: fixed;
+        /* margin-left: 0px; */
+        /* margin-right: 166px; */
+        /* left: 51px; */
     }
 }
 
@@ -934,5 +955,18 @@ svg.icon.icon-caret {
         border: none;
     }
 
+    #responsive-content {
+        padding: 8px 42px;
+        margin: 2px 1px 8px 16px;
+        width: 80%;
+        left: -11px;
+        height: 99%;
+        width: calc(100% - 30%);
+        margin: 0px 20p 8px;
+        position: fixed;
+        /* margin-left: 0px; */
+        /* margin-right: 166px; */
+        /* left: 51px; */
+    }
 
 }
