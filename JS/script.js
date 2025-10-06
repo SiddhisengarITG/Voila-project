@@ -28,17 +28,20 @@ function Cross() {
 }
 
 
-const hem = document.getElementById("hem-burger");
+const hamburger = document.getElementById("hem-burger");
 const side = document.getElementById("responsive-content");
+let hedaerHumburger = document.querySelector(".responsive-navigation-content");
 
-hem.addEventListener("click", () => {
-     side.style.left = "0"
+hamburger.addEventListener("click", () => {
+hedaerHumburger.style.display = "block"
+document.body.classList.add("hidden")
+
 });
 
-function closepage() {
-     side.style.left = "-452px"
-
+function PageCloseheader() {
+   hedaerHumburger.style.display = "none"
 }
+
 
 
 
